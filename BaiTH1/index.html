@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Xuân Đức - Bài thực hành 01</title>
+
+    <link rel="stylesheet" href="css/styte.css">
+</head>
+
+<body>
+
+    <!-- NAV / HEADER -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Lê Xuân Đức</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-item">Giới thiệu</a>
+                <a href="#skills" class="nav-item">Kỹ năng</a>
+                <a href="#projects" class="nav-item">Dự án</a>
+                <a href="#contact" class="nav-item">Liên hệ</a>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Nút Dark Mode -->
+                <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện">Dark Mode</button>
+                <!-- Nút Hamburger Mobile -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Mở menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. PHẦN GIỚI THIỆU (HERO) -->
+        <section id="about" class="section reveal">
+            <div class="hero-content">
+                <span class="badge">HELLO</span>
+                <h1>Mình là Lê Xuân Đức</h1>
+                <img src="c:\Users\DUCHUNG\OneDrive\Hình ảnh\Saved Pictures\001207048111.jpeg">
+                <p class="subtitle"> <b>Sinh viên ngành công nghệ thông tin định hướng ứng dụng của PTIT <br />
+                    Đam mê học lập trình, khám phá và học hỏi các công nghệ mới </b></p>
+
+
+            </div>
+        </section>
+
+        <!-- 2. DANH SÁCH KỸ NĂNG -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Kỹ năng của mình</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Lập trình Web</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6)</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Ngôn ngữ</h3>
+                    <p>Python, Java, JavaScript, My SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cơ sở dữ liệu</h3>
+                    <p>MySQL Workbench, Database Design</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Công cụ</h3>
+                    <p>Git, VS Code, Notion, NotebookLM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DANH SÁCH DỰ ÁN -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Dự án đã làm</h2>
+
+            <!-- Thanh lọc & tìm kiếm dự án -->
+            <div class="filter-container">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dự án..." class="search-input">
+                <div class="tag-buttons">
+                    <button class="tag-btn active" data-tag="all">Tất cả</button>
+                    <button class="tag-btn" data-tag="web">Web</button>
+                    <button class="tag-btn" data-tag="data">Data</button>
+                </div>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Dự án 1 -->
+                <div class="project-card" data-category="web" data-title="trang web quan ly ban hang ecommerce">
+                    <span class="project-tag">Web</span>
+                    <h3>Website Quản Lý Bán Hàng</h3>
+                    <p>Trang web hỗ trợ quản lý sản phẩm, đơn hàng và khách hàng với giao diện thân thiện.</p>
+                </div>
+
+                <!-- Dự án 2 -->
+                <div class="project-card" data-category="data" data-title="phan tich du lieu sinh vien python sql">
+                    <span class="project-tag">Data</span>
+                    <h3>Phân Tích Dữ Liệu Học Tập</h3>
+                    <p>Sử dụng Python và SQL để xử lý, trực quan hóa kết quả học tập của sinh viên.</p>
+                </div>
+
+                <!-- Dự án 3 -->
+                <div class="project-card" data-category="web"
+                    data-title="ung dung ghi chu va quan ly cong viec todo list">
+                    <span class="project-tag">Web</span>
+                    <h3>Ứng Dụng Ghi Chú Công Việc</h3>
+                    <p>Ứng dụng To-do list giúp sắp xếp công việc hằng ngày, tích hợp lưu trữ dữ liệu local.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FORM LIÊN HỆ -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">Liên hệ với mình</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" required placeholder="Nhập họ tên của bạn">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required placeholder="Nhập email của bạn">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Lời nhắn *</label>
+                    <textarea id="message" rows="4" maxlength="200" required
+                        placeholder="Nhập nội dung ..."></textarea>
+                    <small class="char-counter"><span id="charCount">0</span>/200 ký tự</small>
+                </div>
+
+                <button type="submit" class="btn">Gửi lời nhắn</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> Lê Xuân Đức</p>
+    </footer>
+
+
+    <script src="Js/script.js"></script>
+</body>
+
+</html>

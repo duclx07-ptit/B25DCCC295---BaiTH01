@@ -23,7 +23,7 @@ body.dark-mode {
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
-/* 2. RESET CƠ BẢN & BASE STYLES */
+/* 2. RESET CƠ BẢN VÀ BASE STYLES */
 * {
     margin: 0;
     padding: 0;

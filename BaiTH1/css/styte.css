@@ -1,6 +1,4 @@
-/* ==========================================
-   1. CẤU HÌNH BIẾN MÀU (LIGHT/DARK MODE)
-   ========================================== */
+/* 1. BIẾN ĐỔI DARK/LIGHT MODE */
 :root {
     --bg-primary: #f8fafc;
     --bg-surface: #ffffff;
@@ -25,9 +23,7 @@ body.dark-mode {
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
-/* ==========================================
-   2. RESET CƠ BẢN & BASE STYLES
-   ========================================== */
+/* 2. RESET CƠ BẢN & BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -63,9 +59,7 @@ body {
     text-align: center;
 }
 
-/* ==========================================
-   3. HEADER / NAVIGATION
-   ========================================== */
+/* 3. HEADER / NAVIGATION */
 .header {
     position: fixed;
     top: 0;
@@ -134,9 +128,7 @@ body {
     display: none; /* Ẩn mặc định ở desktop */
 }
 
-/* ==========================================
-   4. GIỚI THIỆU (HERO SECTION)
-   ========================================== */
+/* 4. GIỚI THIỆU */
 .hero-content {
     text-align: center;
     padding: 40px 0;
@@ -182,9 +174,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   5. DANH SÁCH KỸ NĂNG (GRID)
-   ========================================== */
+/* 5. DANH SÁCH KỸ NĂNG */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -215,9 +205,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* ==========================================
-   6. DANH SÁCH DỰ ÁN & LỌC TÌM KIẾM
-   ========================================== */
+/* 6. DANH SÁCH DỰ ÁN VÀ LỌC TÌM KIẾM */
 .filter-container {
     display: flex;
     flex-direction: column;
@@ -301,9 +289,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ==========================================
-   7. FORM LIÊN HỆ
-   ========================================== */
+/* 7. FORM LIÊN HỆ */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
@@ -344,9 +330,7 @@ body {
     margin-top: 4px;
 }
 
-/* ==========================================
-   8. FOOTER
-   ========================================== */
+/* 8. FOOTER */
 .footer {
     text-align: center;
     padding: 25px 0;
@@ -354,9 +338,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* ==========================================
-   9. HIỆU ỨNG SCROLL REVEAL
-   ========================================== */
+/*  9. HIỆU ỨNG SCROLL REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -368,11 +350,9 @@ body {
     transform: translateY(0);
 }
 
-/* ==========================================
-   10. RESPONSIVE CSS (ĐỦ 2 BREAKPOINTS)
-   ========================================== */
+/* 10. RESPONSIVE CSS  */
 
-/* Breakpoint 1: Tablet (<= 768px) */
+/* Breakpoint 1: Tablet  */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 cột trên tablet */
@@ -383,7 +363,7 @@ body {
     }
 }
 
-/* Breakpoint 2: Mobile (<= 480px) */
+/* Breakpoint 2: Mobile  */
 @media (max-width: 480px) {
     .hamburger-btn {
         display: block; /* Hiện nút Hamburger */
